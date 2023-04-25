@@ -1,0 +1,249 @@
+
+
+.containerblog{
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap:1.5rem;
+    background:#eee;
+}
+
+.containerblog .posts-container .post{
+    width:100%;
+    padding:2rem;
+    background:#fff;
+    border:var(--border);
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+.containerblog .posts-container .post .image{
+    height: 40rem;
+    width:100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.containerblog .posts-container .post .date{
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    color:var(--orange);
+}
+
+.containerblog .posts-container .post .title{
+    padding-top: 1.5rem;
+    font-size: 2.5rem;
+    color:var(--black);
+}
+
+.containerblog .posts-container .post .text{
+    color:var(--light-color);
+    font-size: 1.6rem;
+    line-height: 1.7;
+    padding:1rem 0;
+}
+
+.containerblog .posts-container .links{
+    border-top: var(--border);
+    margin-top: .5rem;
+    padding-top: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.containerblog .posts-container .links .user{
+    margin-right: auto;
+}
+
+.containerblog .posts-container .links .icon{
+    padding-right: 1rem;
+}
+
+.containerblog .posts-container .links a{
+    font-size: 1.5rem;
+    color:var(--light-color);
+}
+
+.containerblog .posts-container .links a i{
+    padding-right: .2rem;
+    color:var(--black);
+}
+
+.containerblog .posts-container .links a:hover{
+    color:var(--orange);
+}
+
+.containerblog .posts-container .links a:hover i{
+    color:var(--orange);
+}
+
+.containerblog .sidebar .box{
+    border:var(--border);
+    border-radius: .5rem;
+    overflow:hidden;
+    background:#fff;
+    margin-bottom: 1.5rem;
+}
+
+.containerblog .sidebar .box .title{
+    padding:1.5rem;
+    font-size: 2rem;
+    color:#fff;
+    background:var(--black);
+    text-transform: capitalize;
+}
+
+.containerblog .sidebar .box .about{
+    text-align: center;
+    padding:1rem 1.5rem;
+}
+
+.containerblog .sidebar .box .about img{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin:1rem 0;
+}
+
+.containerblog .sidebar .box .about h3{
+    color:var(--orange);
+    font-size: 2rem;
+}
+
+.containerblog .sidebar .box .about p{
+    color:var(--light-color);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding:1rem;
+}
+
+.containerblog .sidebar .box .about .follow{
+    padding:1rem 0;
+}
+
+.containerblog .sidebar .box .about .follow a{
+    height: 4rem;
+    line-height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background:var(--black);
+    color:#fff;
+    font-size: 1.7rem;
+    margin:0 .1rem;
+}
+
+.containerblog .sidebar .box .about .follow a:hover{
+    background:var(--orange);
+}
+
+.containerblog .sidebar .box .category{
+    padding:1rem 1.5rem;
+}
+
+.containerblog .sidebar .box .category a{
+    padding:.4rem 0;
+    font-size: 1.5rem;
+    color:var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containerblog .sidebar .box .category a span{
+    background:var(--light-color);
+    color:#fff;
+    border-radius: .5rem;
+    padding:.5rem;
+}
+
+.containerblog .sidebar .box .category a:hover{
+    color:var(--orange);
+}
+
+.containerblog .sidebar .box .category a:hover span{
+    background-color:var(--orange);
+}
+
+.containerblog .sidebar .box .p-post{
+    padding:1rem 2rem;
+}
+
+.containerblog .sidebar .box .p-post a{
+    padding:1rem 0;
+    display: block;
+}
+
+.containerblog .sidebar .box .p-post a h3{
+    color:var(--black);
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.containerblog .sidebar .box .p-post a span{
+    color:var(--light-color);
+    font-size: 1.5rem;
+}
+
+.containerblog .sidebar .box .p-post a span i{
+    padding-right: .2rem;
+}
+
+.containerblog .sidebar .box .p-post a:hover h3{
+    color:var(--orange);
+}
+
+.containerblog .sidebar .box .tags{
+    padding:1rem;
+}
+
+.containerblog .sidebar .box .tags a{
+    display: inline-block;
+    padding:1rem 1.5rem;
+    font-size: 1.5rem;
+    color:var(--black);
+    border-radius: .5rem;
+    border:var(--border);
+    margin:.5rem;
+}
+
+.containerblog .sidebar .box .tags a:hover{
+    background:var(--black);
+    color:#fff;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:991px){
+
+
+    .container{
+        grid-template-columns: 2fr 1fr;
+    }
+
+}
+
+@media (max-width:768px){
+
+
+
+    .container{
+        grid-template-columns: 1fr;
+        gap:0;
+    }
+
+    .container .posts-container .post .image{
+        height: 30rem;;
+    }
+
+}
+
+
+
+
+
